@@ -48,32 +48,50 @@
         text-align: left;
       }
 
+      /* Setting table row height to 56px */
+      tbody tr {
+        height: 56px; /* Setting the height of each row to 56px */
+      }
+
+      tbody td {
+        height: 56px; /* Ensuring each cell in the row takes up the full height */
+        vertical-align: middle; /* Vertically centering the content inside each cell */
+        padding: 0; /* Removing padding to ensure exact height */
+      }
+
+      .footer-table td {
+        border: none; /* Removing borders around individual cells */
+        vertical-align: bottom; /* Aligning content to the bottom */
+        text-align: left; /* Text and image to the left */
+        height: auto; /* Height to adjust automatically */
+        padding-bottom: 10px; /* Padding to the bottom for spacing */
+      }
+
       .footer-table {
-        width: 600px; /* Fixed width */
-        height: 168px; /* Fixed height */
+        width: 600px;
+        height: 168px;
         text-align: center;
         border-collapse: collapse;
         border: none;
         table-layout: fixed;
       }
 
-      .footer-table td {
-        border: none; /* Removing borders around individual cells */
-        vertical-align: bottom; /* Aligning content to the bottom */
-        height: 50px;
-        padding: 10px;
-      }
-
       .view-browser {
-        text-align: center;
-        font-size: 12px;
-        color: #0073e6;
-        margin-bottom: 10px;
+        color: #98a2b3;
+        margin: 0; /* Removing all margins*/
+        padding: 0; /* Removing padding */
+        display: inline-block;
+        width: 600px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center; /* Horizontally center the text */
+        font-size: 15px;
+        text-decoration: none; /* Removing text underline */
       }
 
       .view-browser a {
         text-decoration: none;
-        color: #0073e6;
+        padding: 24 12;
       }
 
       .mini-logo-size {
@@ -82,33 +100,60 @@
         object-fit: cover;
       }
 
-      .footer-image-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Align content to the left */
+      .footer-table img {
+        display: block; /* Preventing image from aligning with text */
+        margin: 0; /* The image is aligned with the left edge */
       }
 
       .footer-text {
         font-size: 14px;
-        line-height: 1.5;
         color: #333;
+        line-height: 1.5;
+        text-align: left;
+        margin: 0;
+        padding-top: 5px;
+      }
+
+      /* Common Style for Regular Text */
+      .regular-text {
+        font-size: 15px;
+        color: #667085;
+        line-height: 1.5;
+        text-align: left;
+        margin: 0;
+      }
+
+      /* Common Style for Functional Style text */
+      .header-bold-text {
+        font-size: 28px; /* Set font size to 28px for Functional Style */
+        font-weight: bold;
+        color: #101828;
+        text-align: left;
+      }
+
+      /* Common Style for Acme Corporation text */
+      .footer-bold-text {
+        font-size: 16px; /* Set font size to 15px for Acme Corporation */
+        font-weight: bold;
+        color: #101828;
+        text-align: left;
       }
     </style>
   </head>
-  <body>
+  <body class="regular-text">
     <div class="table-container">
       <table>
         <thead>
           <tr>
             <td colspan="3">
-              <div>
+              <div class="view-browser">
                 <a href="#">View in browser</a>
               </div>
               <div>
                 <img class="logo" src="images/mini-logo.png" alt="" />
               </div>
               <div class="table-head-content">
-                <p class="title">Functional Style</p>
+                <p class="header-bold-text">Functional Style</p>
                 <p>
                   Combine practicality and style effortlessly with our
                   furniture, offering functional designs that enhance your
@@ -156,10 +201,14 @@
                   <img
                     class="mini-logo-size"
                     src="images/mini-logo.png"
-                    alt=""
+                    alt="Mini Logo"
                   />
+                  <div class="footer-text">
+                    <p class="footer-bold-text">Acme Corporation</p>
+                    <p class="regular-text">Think different</p>
+                  </div>
                 </td>
-                <td>123 Main Street Anytown, CA 12345</td>
+                <td class="regular-text">123 Main Street Anytown, CA 12345</td>
               </tr>
             </table>
           </tr>
