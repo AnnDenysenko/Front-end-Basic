@@ -1,0 +1,94 @@
+@import url("reset.css");
+
+/* 
+	? Типи селекторів:
+	html елементи: <h1>, <a href="">, <div>, <p>
+	селектори класів: .class { value: 100px }
+	селектори по ідентифікатору: #unique {}
+	по атрибуту a[href="https://google.com"] {}
+
+	Дефолт стиль від браузеру: 0
+	Селектор по тегу: 1
+	Селектор по класу: 10
+	Селектор по ID: 100
+	Стиль в атрибуті тегу: 1000
+*/
+
+.container {
+  max-width: 1200px; /* Задає максимальну ширину */
+  width: 100%; /* Дозволяє контейнеру займати всю ширину на менших екранах */
+  margin: 0 auto; /* Центрує контейнер горизонтально */
+  padding: 0 15px; /* Додає внутрішні відступи для контенту */
+}
+
+/* ===== Загальні стилі ===== */
+body {
+  background: grey; /* Перенесено з інлайн стилю */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: beige; /* Перенесено з інлайн стилю */
+}
+
+/* ===== Заголовки ===== */
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* ===== Секції ===== */
+.section {
+  margin-bottom: 20px;
+}
+
+.section p {
+  line-height: 1.6;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+/* ===== Зображення ===== */
+.section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background: #222;
+  color: #fff;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+/* ===== Додаткові стилі для 2 сторінки ===== */
+.wrapper {
+  width: 100%;
+}
+
+.header {
+  height: 60px;
+  background-color: #333;
+}
+
+.body {
+  min-height: 300px;
+  background-color: #ddd;
+}
