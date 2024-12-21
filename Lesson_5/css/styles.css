@@ -13,82 +13,180 @@
 	Селектор по ID: 100
 	Стиль в атрибуті тегу: 1000
 */
-
-.container {
-  max-width: 1200px; /* Задає максимальну ширину */
-  width: 100%; /* Дозволяє контейнеру займати всю ширину на менших екранах */
-  margin: 0 auto; /* Центрує контейнер горизонтально */
-  padding: 0 15px; /* Додає внутрішні відступи для контенту */
+.main {
+	background: blanchedalmond !important;
 }
 
-/* ===== Загальні стилі ===== */
-body {
-  background: grey; /* Перенесено з інлайн стилю */
-  font-family: Arial, sans-serif;
+.sub-title {
+  font-size: 24px;
+  margin-top: 20px;
+  color: burlywood;
+  text-align:center
+}
+
+.info-text {
+  color: grey;
+}
+
+.main-title {
+  font-size: 24px;
+  margin-top: 20px;
   color: #333;
 }
 
-.container {
-  max-width: 1200px;
+/* Body and Wrapper */
+body {
+  background-color: grey;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container, .wrapper {
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background: beige; /* Перенесено з інлайн стилю */
 }
 
-/* ===== Заголовки ===== */
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+/* Container for Page 1 */
+.container {
+  max-width: 1200px;
+  background-color: beige;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+/* Content Style */
+.content {
+  width: 100%;
 }
 
-/* ===== Секції ===== */
+h1, h2 {
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
 .section {
   margin-bottom: 20px;
 }
 
-.section p {
-  line-height: 1.6;
+.section ul {
+  margin-left: 20px;
 }
 
-.section ul li {
-  margin-bottom: 10px;
-}
-
-/* ===== Зображення ===== */
 .section img {
   max-width: 100%;
   height: auto;
+  margin-top: 20px;
 }
 
-/* ===== Footer ===== */
+/* Footer Styling */
 .footer {
   text-align: center;
-  margin-top: 20px;
   padding: 10px;
-  background: #222;
-  color: #fff;
+  background-color: #222;
+  color: white;
+  margin-top: 20px;
 }
 
 .footer p {
   font-size: 14px;
 }
 
-/* ===== Додаткові стилі для 2 сторінки ===== */
-.wrapper {
-  width: 100%;
-}
-
+/* Header for Page 2 */
 .header {
-  height: 60px;
   background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
+
+.back-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Body for Pages 2 and 1 */
 .body {
-  min-height: 300px;
-  background-color: #ddd;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+}
+
+.intro {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Genres Section on Page 2 */
+.genres {
+  margin-top: 20px;
+}
+
+.genre-title {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.genres p {
+  margin-bottom: 10px;
+}
+
+.genres img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Footer for Page 2 */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .wrapper {
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 28px;
+  }
+
+  .genre-title {
+    font-size: 20px;
+  }
+
+  .section img {
+    max-width: 100%;
+  }
 }
