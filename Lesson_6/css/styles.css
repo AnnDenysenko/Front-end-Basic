@@ -1,0 +1,144 @@
+@import url("reset.css");
+
+.container {
+  padding: 20px 0;
+  background: bisque;
+  width: 1200px;
+  margin: 0 auto;
+  /* text-align: justify; */
+  font-size: 0;
+}
+
+/* reset only that block which has child element display: inline-block */
+
+.upper-block {
+  font-size: 0;
+}
+
+.upper-block > div {
+  font-size: 20px;
+  outline: 2px solid black;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  background: lightsalmon;
+  overflow: auto;
+}
+
+.middle-block {
+  font-size: 0;
+}
+
+/* .middle-block>div {
+	font-size: 20px;
+	outline: 2px solid black;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	background: lightsalmon
+} */
+
+.parent-middle-1,
+.parent-middle-2 {
+  outline: 2px solid black;
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: top;
+  background: lightblue;
+}
+
+.parent-middle-1 > div {
+  outline: 2px solid black;
+  height: 200px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.parent-middle-2 > div {
+  outline: 2px solid black;
+  height: 133.33px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.parent-middle-1 {
+  width: 800px;
+  height: 400px;
+}
+
+.parent-middle-2 {
+  width: 400px;
+  height: 400px;
+}
+
+.bottom-block {
+  font-size: 0;
+}
+
+.parent-bottom-1,
+.parent-bottom-2 {
+  /* outline: 2px solid black; */
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: top;
+  background: lightgoldenrodyellow;
+}
+
+.parent-bottom-1 > div {
+  outline: 2px solid black;
+  height: 400px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.parent-bottom-2 > div {
+  outline: 2px solid black;
+  height: 200px;
+  overflow: auto;
+}
+
+.parent-bottom-1 {
+  width: 400px;
+  height: 400px;
+}
+
+.parent-bottom-2 {
+  width: 800px;
+  height: 400px;
+}
+
+.bottom-lower-right-subblock {
+  font-size: 0; /* Remove gaps between inline-blocks */
+}
+
+.bottom-upper-right-subblock {
+  padding: 20px;
+  width: 800px;
+  height: 200px;
+}
+
+.bottom-nested-block-1 {
+  padding: 20px;
+}
+
+.bottom-nested-block-2 > div {
+  display: inline-block; /* Makes them inline-block */
+  padding: 20px;
+  outline: 2px solid black;
+  width: 400px;
+  height: 100px;
+  overflow: auto;
+}
+
+.bottom-nested-block-1,
+.bottom-nested-block-2 {
+  display: inline-block; /* Makes them inline-block */
+  width: 400px;
+  height: 200px;
+  font-size: 20px;
+  vertical-align: top;
+  /* box-sizing: border-box; Include padding and border in width */
+  background: lightgoldenrodyellow;
+}
