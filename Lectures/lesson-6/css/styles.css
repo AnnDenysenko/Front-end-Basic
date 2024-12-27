@@ -1,0 +1,177 @@
+@import url('reset.css');
+
+.header {
+	padding: 20px 0;
+	background: #000;
+}
+
+.header-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header-menu {
+	font-size: 0;
+	text-align: center;
+}
+
+.header-menu>li {
+	display: inline-block;
+	font-size: 20px;
+}
+
+.header-menu>li+li {
+	margin-left: 20px;
+}
+
+/* .header-menu>li:first-child {
+	margin-left: 0;
+} */
+
+.header-menu>li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	display: block;
+	border-bottom: 4px solid transparent;
+}
+
+.header-menu>li:hover a {
+	color: red;
+	/* border-bottom: 4px solid red; */
+	border-color: red;
+}
+
+.link {
+	padding: 10px 30px;
+	font-size: 24px;
+	background: #000;
+	color: aliceblue;
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 40px;
+	border-radius: 6px;
+}
+
+.link:hover {
+	background: #1a1a1a;
+}
+
+
+.link:active {
+	background: #2b0101;
+	color: #ccc;
+}
+
+.link:focus {
+	outline: 2px solid white;
+}
+
+.block-1,
+.block-2 {
+	width: 1200px;
+	padding: 20px;
+	background: #883030;
+}
+
+.block-1 {
+	/* margin-bottom: -50px; */
+	font-size: 40px;
+	color: wheat;
+}
+
+.block-1::before {
+	content: '* ';
+}
+
+.block-1::after {
+	content: ' AFTER ';
+}
+
+.block-2 {
+	margin-top: 40px;
+	background: #000;
+	color: #883030;
+}
+
+.container {
+	padding: 20px 0;
+	background: green;
+	width: 1200px;
+	margin: 0 auto;
+	/* text-align: justify; */
+	font-size: 0;
+}
+
+.dz-block {
+	font-size: 0;
+}
+
+.dz-block>div {
+	font-size: 20px;
+	outline: 2px solid blue;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	background: #883030;
+	vertical-align: top;
+}
+
+.dz-block>div:hover {
+	background: #000;
+	color: white;
+}
+
+/* .dz-block>div:nth-child(odd) {
+	background: blue;
+	color: white;
+} */
+
+/* .dz-block>div:last-child {
+	background: #000;
+	color: white;
+} */
+
+.in-block {
+	padding: 10px;
+	background: yellow;
+	outline: 2px solid red;
+	width: 300px;
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: top;
+	height: 200px;
+	overflow: auto;
+}
+
+.container-test {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 10px 0;
+	background: blue;
+	font-size: 0;
+}
+
+
+
+.paren-1,
+.parent-2 {
+	outline: 2px solid violet;
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: top;
+}
+
+.paren-1>div,
+.parent-2>div {
+	outline: 2px solid red;
+}
+
+.paren-1 {
+	width: 400px;
+}
+
+.parent-2 {
+	width: 800px;
+}

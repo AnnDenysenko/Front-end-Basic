@@ -1,0 +1,132 @@
+@import url("reset.css");
+
+.container {
+  padding: 20px 0;
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 0; /* Prevents gaps caused by inline-block spacing */
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 
+.float-test {
+  font-size: 30px;
+  color: #bb3c3c;
+  background: #1d1919;
+}
+
+.float-test img {
+  float: left;
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+} */
+
+/* FLOAT exm */
+.float-upper {
+  background: rebeccapurple;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.float-upper > div {
+  width: 400px;
+  height: 400px;
+  outline: 2px solid orange;
+  float: left;
+  padding: 20px;
+}
+
+.float-middle {
+  background: cornflowerblue;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.float-middle-parent {
+  float: left;
+  width: 800px;
+  outline: 2px solid orangered;
+}
+
+.float-middle-parent > div {
+  height: 200px;
+  outline: 2px solid #000;
+  padding: 20px;
+}
+
+.float-middle-parent + .float-middle-parent {
+  width: 400px;
+}
+
+.float-middle-parent + .float-middle-parent > div {
+  height: 133.333px;
+}
+
+.float-bottom {
+  background: aquamarine;
+  font-family: "Raleway";
+  /* font-weight: 400; */
+  font-size: 25px;
+  width: 1200px;
+  height: 400px;
+  outline: 2px solid darkblue;
+}
+
+.float-bottom-parent {
+  float: left;
+  width: 400px;
+  height: 400px;
+  outline: 2px solid darkblue;
+}
+
+.float-bottom-parent > div {
+  height: 400px;
+  outline: 2px solid #000;
+  /* padding: 20px; */
+}
+
+.float-bottom :first-child > div {
+  padding: 20px;
+}
+
+.float-bottom-parent + .float-bottom-parent {
+  width: 800px;
+  height: 400px;
+  outline: 2px solid darkblue;
+}
+
+.float-bottom-parent + .float-bottom-parent > div {
+  height: 200px;
+}
+.bottom-lower-right-subblock {
+  width: 800px;
+  height: 400px;
+  outline: 2px solid darkblue;
+}
+
+.bottom-nested-block-1 {
+  float: left;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  overflow: auto;
+}
+.bottom-nested-block-2 {
+  float: left;
+  outline: 2px solid darkblue;
+}
+
+.bottom-nested-block-2 > div {
+  width: 400px;
+  height: 100px;
+  overflow: auto;
+  outline: 2px solid darkblue;
+  padding: 20px;
+}

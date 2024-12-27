@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+
+	<style>
+		.container {
+			width: 1000px;
+			margin: 0 auto;
+		}
+
+		.box {
+			color: blue;
+			background: orange;
+			font-size: 24px;
+			line-height: 24px;
+			font-weight: 400;
+			text-align: justify;
+			width: 600px;
+			height: 150px;
+			overflow: auto;
+			margin: 0 auto;
+			padding-left: 20px;
+			box-sizing: border-box;
+		}
+
+		.inner {
+			color: orange;
+			background: white;
+			font-size: 40px;
+			font-weight: 700;
+			width: 780px;
+			margin: 40px auto;
+			padding: 30px;
+		}
+
+		.bold {
+			font-weight: 700;
+		}
+
+		/* 
+			<table> - тег обгортка
+			<thead> - верх колонтитулу
+			<tbody> - тіло таблиці
+			<tfoot> - підвал таблиці
+			<tr> - лінія таблиці
+			<th, td> - хедер та звичайна комірка (ячейка) 
+		*/
+		table,
+		th,
+		td {
+			border: 2px solid;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+
+<body style="background: violet" class="body">
+	<div class="container">
+		<table>
+			<tbody>
+				<tr>
+					<td># num</td>
+					<td>Name phone</td>
+					<td>Price</td>
+				</tr>
+				<tr>
+					<td>1.</td>
+					<td>Xioami</td>
+					<td>$300</td>
+				</tr>
+				<tr>
+					<td>2.</td>
+					<td>Ipnone</td>
+					<td>$299</td>
+				</tr>
+				<tr>
+					<td colspan="3">$9999</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="box">
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam,
+		iusto laudantium libero sint aut dolor ducimus veniam facilis nihil dicta,
+		alias aliquam consectetur accusamus iste magni tenetur expedita impedit
+		eaque! Lorem <span class="bold">ipsum </span>dolor sit amet
+		consectetur, adipisicing elit. Natus blanditiis vitae molestiae! Autem
+		beatae modi quae harum mollitia saepe. Ipsum a deserunt perferendis ut
+		provident quae maxime accusamus magni quibusdam.
+	</div>
+
+	<div class="inner">
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam,
+		iusto laudantium libero sint a
+	</div>
+
+	<p class="inner">
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam,
+		iusto laudantium libero sint a
+	</p>
+
+	<img src="images/hulk.png" alt="hulk" style="width: 300px" />
+</body>
+
+</html>

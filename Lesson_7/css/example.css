@@ -1,0 +1,138 @@
+/* Upper Block */
+.upper-block {
+  font-size: 0; /* Prevents gaps caused by inline-block spacing */
+}
+
+.upper-block > div {
+  font-size: 20px;
+  outline: 2px solid black;
+  float: left; /* Use float instead of inline-block */
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  background: lightsalmon;
+  overflow: auto;
+}
+
+/* Middle Block */
+.middle-block {
+  font-size: 0; /* Prevents gaps caused by inline-block spacing */
+}
+
+.parent-middle-1,
+.parent-middle-2 {
+  outline: 2px solid black;
+  float: left; /* Use float instead of inline-block */
+  font-size: 20px;
+  background: lightblue;
+}
+
+.parent-middle-1 > div {
+  outline: 2px solid black;
+  height: 200px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.parent-middle-2 > div {
+  outline: 2px solid black;
+  height: 133.33px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.parent-middle-1 {
+  width: 800px;
+  height: 400px;
+}
+
+.parent-middle-2 {
+  width: 400px;
+  height: 400px;
+}
+
+/* Bottom Block */
+.bottom-block {
+  font-size: 0; /* Prevents gaps caused by inline-block spacing */
+}
+
+.parent-bottom-1,
+.parent-bottom-2 {
+  float: left; /* Use float instead of inline-block */
+  font-size: 20px;
+  background: lightgoldenrodyellow;
+}
+
+.parent-bottom-1 > div {
+  outline: 2px solid black;
+  height: 400px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.parent-bottom-2 > div {
+  outline: 2px solid black;
+  height: 200px;
+  overflow: auto;
+}
+
+.parent-bottom-1 {
+  width: 400px;
+  height: 400px;
+}
+
+.parent-bottom-2 {
+  width: 800px;
+  height: 400px;
+}
+
+.bottom-upper-right-subblock {
+  padding: 20px;
+  width: 800px;
+  height: 200px;
+  float: left; /* Use float instead of inline-block */
+}
+
+.bottom-lower-right-subblock {
+  font-size: 0; /* Prevents gaps caused by inline-block spacing */
+}
+
+.bottom-nested-block-1 {
+  padding: 20px;
+  float: left; /* Use float instead of inline-block */
+  width: 400px;
+  height: 200px;
+}
+
+.bottom-nested-block-2 > div {
+  float: left; /* Use float instead of inline-block */
+  padding: 20px;
+  outline: 2px solid black;
+  width: 400px;
+  height: 100px;
+  overflow: auto;
+}
+
+.bottom-nested-block-2 {
+  float: left; /* Use float instead of inline-block */
+  width: 400px;
+  height: 200px;
+  font-size: 20px;
+  background: lightgoldenrodyellow;
+}
+
+/* Clearfix to clear floats */
+.container::after,
+.upper-block::after,
+.middle-block::after,
+.bottom-block::after,
+.parent-middle-1::after,
+.parent-middle-2::after,
+.parent-bottom-1::after,
+.parent-bottom-2::after,
+.bottom-lower-right-subblock::after,
+.bottom-nested-block-2::after {
+  content: "";
+  display: table;
+  clear: both;
+}
