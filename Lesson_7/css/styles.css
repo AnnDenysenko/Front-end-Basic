@@ -30,8 +30,9 @@
 .float-upper {
   background: rebeccapurple;
   font-family: "Inter";
-  font-weight: 400;
+  font-weight: 300;
   font-size: 25px;
+  /* font-family: "Inter", serif; */
 }
 
 .float-upper > div {
@@ -44,9 +45,10 @@
 
 .float-middle {
   background: cornflowerblue;
-  font-family: "Raleway";
-  font-weight: 400;
+  font-family: "Open Sans";
+  font-weight: 300;
   font-size: 25px;
+  /* font-family: "Roboto", serif; */
 }
 
 .float-middle-parent {
@@ -71,7 +73,7 @@
 
 .float-bottom {
   background: aquamarine;
-  font-family: "Raleway";
+  font-family: "Roboto";
   /* font-weight: 400; */
   font-size: 25px;
   width: 1200px;
