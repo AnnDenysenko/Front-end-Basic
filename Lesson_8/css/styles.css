@@ -1,0 +1,56 @@
+@import url("reset.css");
+
+body {
+  background: blanchedalmond;
+  /* margin: 50px; */
+}
+
+.header {
+  padding: 20px 0;
+  background: grey;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.header-container a {
+  color: aquamarine;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.flex-container {
+  width: 600px;
+  height: 200px;
+  border: 5px solid greenyellow;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* flex-flow: row-reverse wrap; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  align-items: stretch;
+}
+
+.flex-container > div {
+  padding: 12px;
+  background: burlywood;
+  border: 2px solid whitesmoke;
+}
